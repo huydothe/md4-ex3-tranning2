@@ -1,0 +1,28 @@
+<body>
+<h3>Phone books</h3>
+<div class="grid">
+    <% for (let phoneBooks of phone) { %>
+        <article class="card product-item">
+            <header class="card__header">
+                <p class="product__title">
+                    <%= phoneBooks.name %>
+                </p>
+            </header>
+            <div class="card__image">
+                <p class="product__price">
+                    <%= phoneBooks.address %>
+                </p>
+            </div>
+            <div class="card__content">
+                <p class="product__price">
+                    <%= phoneBooks.email %>
+                </p>
+                <p class="product__description">
+                    <%= phoneBooks.phone %>
+                </p>
+            </div>
+        </article>
+        </br>
+    <% } %>
+</div>
+</body>
